@@ -1,0 +1,17 @@
+﻿# Config locale / sensible
+config/database.local.php
+
+# Système
+.DS_Store
+Thumbs.db
+
+# Éditeurs
+.vscode/
+.idea/
+
+# Dépendances Java
+client/target/
+client/*.class
+
+# Logs
+*.log
