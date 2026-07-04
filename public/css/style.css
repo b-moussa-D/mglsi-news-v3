@@ -10,7 +10,21 @@ footer { text-align: center; padding: 1rem; color: #666; }
 
 .compte { color: #cbd5e1; font-size: .9rem; margin-top: .5rem; }
 .compte a { color: white; }
-.formulaire { display: flex; flex-direction: column; gap: 1rem; max-width: 320px; }
-.formulaire input { padding: .5rem; border: 1px solid #ccc; border-radius: 4px; }
-.formulaire button { padding: .6rem; background: #2563eb; color: white; border: none; border-radius: 4px; cursor: pointer; }
+.formulaire { display: flex; flex-direction: column; gap: 1rem; max-width: 420px; }
+.formulaire input, .formulaire select, .formulaire textarea {
+    padding: .5rem; border: 1px solid #ccc; border-radius: 4px; font-family: inherit;
+}
+.formulaire button {
+    padding: .6rem; background: #2563eb; color: white; border: none; border-radius: 4px; cursor: pointer;
+}
+.formulaire-inline { display: flex; gap: .5rem; }
+.formulaire-inline input { padding: .4rem; border: 1px solid #ccc; border-radius: 4px; }
+.formulaire-inline button {
+    padding: .4rem .8rem; background: #2563eb; color: white; border: none; border-radius: 4px; cursor: pointer;
+}
 .erreur { color: #dc2626; }
+.succes { color: #16a34a; background: #f0fdf4; border: 1px solid #86efac; padding: .8rem; border-radius: 6px; }
+
+.table-admin { width: 100%; border-collapse: collapse; background: white; margin-bottom: 1.5rem; }
+.table-admin th, .table-admin td { padding: .6rem; border-bottom: 1px solid #e5e7eb; text-align: left; }
+.table-admin th { background: #f1f5f9; }
