@@ -14,5 +14,7 @@ $action = $_GET['action'] ?? 'accueil';
 switch ($action) {
     case 'accueil': (new ArticleController($pdo))->index(); break;
     case 'article': (new ArticleController($pdo))->show((int) $_GET['id']); break;
+    case 'login':   (new AuthController($pdo))->login(); break;
+    case 'logout':  (new AuthController($pdo))->logout(); break;
     default: http_response_code(404); echo "Page introuvable";
 }

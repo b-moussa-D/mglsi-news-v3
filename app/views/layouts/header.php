@@ -16,5 +16,14 @@
             </a>
         <?php endforeach; ?>
     </nav>
+    <div class="compte">
+        <?php if (!empty($_SESSION['utilisateur'])): ?>
+            Bonjour <?= htmlspecialchars($_SESSION['utilisateur']['nom']) ?>
+            (<?= htmlspecialchars($_SESSION['utilisateur']['role']) ?>)
+            — <a href="index.php?action=logout">Se déconnecter</a>
+        <?php else: ?>
+            <a href="index.php?action=login">Se connecter</a>
+        <?php endif; ?>
+    </div>
 </header>
 <main>
