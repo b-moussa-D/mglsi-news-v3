@@ -43,6 +43,6 @@ CREATE TABLE Token (
 INSERT INTO Categorie (libelle) VALUES ('Sport'),('Politique'),('Éducation'),('Économie');
 
 INSERT INTO Utilisateur (nom, prenom, login, motDePasse, role) VALUES
-('Diongue','Baye Moussa','bmoussa', '$2y$10$exempleHacheAGenererAvecPasswordHash', 'administrateur'),
-('Diallo','Papa Amady','pamady', '$2y$10$exempleHacheAGenererAvecPasswordHash', 'editeur'),
-('Samb','Koumba','ksamb', '$2y$10$exempleHacheAGenererAvecPasswordHash', 'editeur');
+('Diongue','Baye Moussa','bmoussa', '$2y$10$yGsUvVXmo0TsTJrkUIsDNOqrdqIgHHTUVHG8V3GIoGpdByTfuk.Hm', 'administrateur'),
+('Diallo','Papa Amady','pamady', '$2y$10$yGsUvVXmo0TsTJrkUIsDNOqrdqIgHHTUVHG8V3GIoGpdByTfuk.Hm', 'editeur'),
+('Samb','Koumba','ksamb', '$2y$10$yGsUvVXmo0TsTJrkUIsDNOqrdqIgHHTUVHG8V3GIoGpdByTfuk.Hm', 'editeur');
